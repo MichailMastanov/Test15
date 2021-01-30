@@ -1,0 +1,32 @@
+[1mdiff --git a/src/com/company/Person.java b/src/com/company/Person.java[m
+[1mindex 4c02f6e..894c64b 100644[m
+[1m--- a/src/com/company/Person.java[m
+[1m+++ b/src/com/company/Person.java[m
+[36m@@ -1,9 +1,27 @@[m
+ package com.company;[m
+ [m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+ public class Person {[m
+     private int Age;[m
+     private String firstNaeme;[m
+     private String lastName;[m
+[32m+[m[32m    private List<Car> cars;[m
+[32m+[m
+[32m+[m[32m    public Person(int age, String firstNaeme, String lastName, List<Car> cars) {[m
+[32m+[m[32m        Age = age;[m
+[32m+[m[32m        this.firstNaeme = firstNaeme;[m
+[32m+[m[32m        this.lastName = lastName;[m
+[32m+[m[32m        this.cars = cars;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public List<Car> getCars() {[m
+[32m+[m[32m        return cars;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public void setCars(List<Car> cars) {[m
+[32m+[m[32m        this.cars = cars;[m
+[32m+[m[32m    }[m
+ [m
+     public Person(int age, String firstNaeme, String lastName) {[m
+         Age = age;[m
