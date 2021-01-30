@@ -3,13 +3,13 @@ package com.company;
 import java.util.List;
 
 public class Person {
-    private int Age;
+    private int vozrast;
     private String firstNaeme;
     private String lastName;
     private List<Car> cars;
 
-    public Person(int age, String firstNaeme, String lastName, List<Car> cars) {
-        Age = age;
+    public Person(int vozrast, String firstNaeme, String lastName, List<Car> cars) {
+        this.vozrast = vozrast;
         this.firstNaeme = firstNaeme;
         this.lastName = lastName;
         this.cars = cars;
@@ -23,18 +23,18 @@ public class Person {
         this.cars = cars;
     }
 
-    public Person(int age, String firstNaeme, String lastName) {
-        Age = age;
+    public Person(int vozrast, String firstNaeme, String lastName) {
+        this.vozrast = vozrast;
         this.firstNaeme = firstNaeme;
         this.lastName = lastName;
     }
 
-    public int getAge() {
-        return Age;
+    public int getvozrast() {
+        return vozrast;
     }
 
-    public void setAge(int age) {
-        Age = age;
+    public void setvozrast(int vozrast) {
+        this.vozrast = vozrast;
     }
 
     public String getFirstNaeme() {
